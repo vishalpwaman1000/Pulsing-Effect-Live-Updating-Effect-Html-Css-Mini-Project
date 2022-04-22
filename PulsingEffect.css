@@ -1,0 +1,42 @@
+html,body{
+    height: 100%;
+    width: 100%;
+    padding: 0%;
+    margin: 0%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Live{
+    display: block;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: blue;
+    animation: pulsing 3s linear infinite;
+}
+
+.Text{
+    font-family: 'Roboto';
+    color: white;
+    font-size: 25px;
+    font-weight: 500;
+    margin: 40px;
+}
+
+@keyframes pulsing {
+    0%{
+        box-shadow: blue 0 0 0 0px;
+    }
+
+    /* 25%{
+        box-shadow: #0000ff77 0 0 0 50px;
+    } */
+
+    20%{
+        /* box-shadow: #ff69b400 0 0 0 100px; */
+        box-shadow: #0000ff00 0 0 0 100px;
+    }
+}
